@@ -22,9 +22,31 @@ Git: Repositório "sistema-pandemia" no GitHub;
 
 Como executar:
 
-javac -d target -cp src src/main/java/com/pandemia/.java src/main/java/com/pandemia/model/.java src/main/java/com/pandemia/controller/.java src/main/java/com/pandemia/dao/.java src/main/java/com/pandemia/view/*.java
+**Windows (PowerShell/CMD):**
 
+```bash
+# Criar diretório target se não existir
+mkdir target -ErrorAction SilentlyContinue
+
+# Compilar todos os arquivos Java
+javac -d target -cp src src/main/java/com/pandemia/*.java src/main/java/com/pandemia/model/*.java src/main/java/com/pandemia/controller/*.java src/main/java/com/pandemia/dao/*.java src/main/java/com/pandemia/view/*.java
+
+# Executar o programa
 java -cp target com.pandemia.Main
+```
+
+**Linux/macOS:**
+
+```bash
+# Criar diretório target se não existir
+mkdir -p target
+
+# Compilar todos os arquivos Java
+javac -d target -cp src src/main/java/com/pandemia/*.java src/main/java/com/pandemia/model/*.java src/main/java/com/pandemia/controller/*.java src/main/java/com/pandemia/dao/*.java src/main/java/com/pandemia/view/*.java
+
+# Executar o programa
+java -cp target com.pandemia.Main
+```
 
 Próximos passos:
 
